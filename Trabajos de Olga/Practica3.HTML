@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de JavaScript</title>
+    <script>
+        function asignacion() {
+            var element = document.createElement("div");
+            element.id = "testqq"; 
+            element.innerHTML = "Este es un nuevo div";  
+            document.body.appendChild(element);  
+            var el = document.getElementById("testqq");  
+            el.style.background = "blue";
+        }
+
+        function cambio() {
+            const myElement = document.getElementById("dato");
+            myElement.style.color = "red";
+        }
+    </script>
+</head>
+<body>
+    <div id="primero">
+        <p id="dato">Párrafo a modificar</p>
+    </div>
+    <input type="button" onclick="asignacion()" value="Cambio 1">
+
+    <input type="button" onclick="cambio()" value="Cambio 2">
+</body>
+</html>
